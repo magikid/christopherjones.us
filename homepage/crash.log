@@ -1,0 +1,224 @@
+Crashlog created at 2014-05-27 00:50:38 +0000
+
+===== MESSAGE:
+
+NoMethodError: undefined method `change' for #<Listen::Listener:0x000000027a2a18>
+
+===== COMPILATION STACK:
+
+  (empty)
+
+===== STACK TRACE:
+
+  0. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/nanoc-3.6.11/lib/nanoc/cli/commands/watch.rb:86:in `run'
+  1. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/nanoc-3.6.11/lib/nanoc/cli/command_runner.rb:14:in `block in call'
+  2. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/nanoc-3.6.11/lib/nanoc/cli/error_handler.rb:74:in `handle_while'
+  3. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/nanoc-3.6.11/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  4. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/nanoc-3.6.11/lib/nanoc/cli/command_runner.rb:13:in `call'
+  5. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/cri-2.6.0/lib/cri/command_dsl.rb:223:in `block in runner'
+  6. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/cri-2.6.0/lib/cri/command.rb:298:in `call'
+  7. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/cri-2.6.0/lib/cri/command.rb:298:in `run_this'
+  8. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/cri-2.6.0/lib/cri/command.rb:251:in `run'
+  9. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/cri-2.6.0/lib/cri/command.rb:264:in `run'
+  10. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/nanoc-3.6.11/lib/nanoc/cli.rb:59:in `block in run'
+  11. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/nanoc-3.6.11/lib/nanoc/cli/error_handler.rb:74:in `handle_while'
+  12. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/nanoc-3.6.11/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  13. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/nanoc-3.6.11/lib/nanoc/cli.rb:57:in `run'
+  14. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/nanoc-3.6.11/bin/nanoc:19:in `<top (required)>'
+  15. /home/chrisj/.rvm/gems/ruby-2.1.1/bin/nanoc:23:in `load'
+  16. /home/chrisj/.rvm/gems/ruby-2.1.1/bin/nanoc:23:in `<main>'
+  17. /home/chrisj/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
+
+===== VERSION INFORMATION:
+
+nanoc 3.6.11 © 2007-2014 Denis Defreyne.
+Running ruby 2.1.1 (2014-02-24) on x86_64-linux with RubyGems 2.2.2.
+
+===== SYSTEM INFORMATION:
+
+Linux Amy 3.5.0-17-generic #28-Ubuntu SMP Tue Oct 9 19:31:23 UTC 2012 x86_64 x86_64 x86_64 GNU/Linux
+
+===== INSTALLED GEMS:
+
+  adsf 1.2.0
+  bundler 1.5.3
+  celluloid 0.15.2
+  coderay 1.1.0
+  colored 1.2
+  cri 2.6.0
+  ffi 1.9.3
+  formatador 0.2.5
+  guard 2.6.1
+  guard-nanoc 1.0.2
+  haml 3.1.7
+  json 1.8.1
+  listen 2.7.5
+  lumberjack 1.0.5
+  method_source 0.8.2
+  mini_portile 0.6.0
+  nanoc 3.6.11
+  nokogiri 1.6.2.1
+  pry 0.9.12.6
+  rack 1.5.2
+  rb-fsevent 0.9.4
+  rb-inotify 0.9.4
+  redcarpet 3.1.2
+  sass 3.2.14
+  slop 3.5.0
+  thor 0.19.1
+  timers 1.1.0
+  w3c_validators 1.2
+
+===== ENVIRONMENT:
+
+BUNDLE_BIN_PATH => "/home/chrisj/.rvm/gems/ruby-2.1.1@global/gems/bundler-1.5.3/bin/bundle"
+BUNDLE_GEMFILE => "/home/chrisj/projects/websites/christopherjones.us/homepage/Gemfile"
+EDITOR => "vim"
+GEM_HOME => "/home/chrisj/.rvm/gems/ruby-2.1.1"
+GEM_PATH => "/home/chrisj/.rvm/gems/ruby-2.1.1:/home/chrisj/.rvm/gems/ruby-2.1.1@global"
+HOME => "/home/chrisj"
+IRBRC => "/home/chrisj/.rvm/rubies/ruby-2.1.1/.irbrc"
+LANG => "en_US.UTF-8"
+LANGUAGE => "en_US:en"
+LESSCLOSE => "/usr/bin/lesspipe %s %s"
+LESSOPEN => "| /usr/bin/lesspipe %s"
+LOGNAME => "chrisj"
+LS_COLORS => "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:"
+MAIL => "/var/mail/chrisj"
+MY_RUBY_HOME => "/home/chrisj/.rvm/rubies/ruby-2.1.1"
+NODE_PATH => "/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript"
+OLDPWD => "/home/chrisj"
+PATH => "/home/chrisj/.rvm/gems/ruby-2.1.1/bin:/home/chrisj/.rvm/gems/ruby-2.1.1@global/bin:/home/chrisj/.rvm/rubies/ruby-2.1.1/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/chrisj/.rvm/bin"
+PWD => "/home/chrisj/projects/websites/christopherjones.us/homepage"
+RUBYLIB => "/home/chrisj/.rvm/gems/ruby-2.1.1@global/gems/bundler-1.5.3/lib"
+RUBYOPT => "-rbundler/setup"
+SHELL => "/bin/bash"
+SHLVL => "1"
+SSH_AUTH_SOCK => "/tmp/ssh-EnrWrQnb1s/agent.32727"
+SSH_CLIENT => "173.69.207.102 49773 22"
+SSH_CONNECTION => "173.69.207.102 49773 107.170.88.111 22"
+SSH_TTY => "/dev/pts/5"
+TERM => "xterm-256color"
+USER => "chrisj"
+XDG_SESSION_COOKIE => "623c510d16f73b89d5359a22507f1ad5-1401150662.966943-812239718"
+_ => "/home/chrisj/.rvm/gems/ruby-2.1.1/bin/nanoc"
+_ORIGINAL_GEM_PATH => "/home/chrisj/.rvm/gems/ruby-2.1.1:/home/chrisj/.rvm/gems/ruby-2.1.1@global"
+_system_arch => "x86_64"
+_system_name => "Ubuntu"
+_system_type => "Linux"
+_system_version => "12.10"
+rvm_bin_path => "/home/chrisj/.rvm/bin"
+rvm_path => "/home/chrisj/.rvm"
+rvm_prefix => "/home/chrisj"
+rvm_version => "1.25.22 (stable)"
+
+===== GEMFILE.LOCK:
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    adsf (1.2.0)
+      rack (>= 1.0.0)
+    celluloid (0.15.2)
+      timers (~> 1.1.0)
+    coderay (1.1.0)
+    colored (1.2)
+    cri (2.6.0)
+      colored (~> 1.2)
+    ffi (1.9.3)
+    formatador (0.2.5)
+    guard (2.6.1)
+      formatador (>= 0.2.4)
+      listen (~> 2.7)
+      lumberjack (~> 1.0)
+      pry (>= 0.9.12)
+      thor (>= 0.18.1)
+    guard-nanoc (1.0.2)
+      guard (>= 1.8.0)
+      nanoc (>= 3.6.3)
+    haml (3.1.7)
+    json (1.8.1)
+    listen (2.7.5)
+      celluloid (>= 0.15.2)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+    lumberjack (1.0.5)
+    method_source (0.8.2)
+    mini_portile (0.6.0)
+    nanoc (3.6.11)
+      cri (~> 2.3)
+    nokogiri (1.6.2.1)
+      mini_portile (= 0.6.0)
+    pry (0.9.12.6)
+      coderay (~> 1.0)
+      method_source (~> 0.8)
+      slop (~> 3.4)
+    rack (1.5.2)
+    rb-fsevent (0.9.4)
+    rb-inotify (0.9.4)
+      ffi (>= 0.5.0)
+    redcarpet (3.1.2)
+    sass (3.2.14)
+    slop (3.5.0)
+    thor (0.19.1)
+    timers (1.1.0)
+    w3c_validators (1.2)
+      json
+      nokogiri
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  adsf
+  guard-nanoc
+  haml
+  nanoc
+  nokogiri
+  redcarpet
+  sass
+  w3c_validators
+
+===== LOAD PATHS:
+
+  0. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/nanoc-3.6.11/lib
+  1. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/w3c_validators-1.2/lib
+  2. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib
+  3. /home/chrisj/.rvm/gems/ruby-2.1.1/extensions/x86_64-linux/2.1.0/redcarpet-3.1.2
+  4. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/redcarpet-3.1.2/lib
+  5. /home/chrisj/.rvm/gems/ruby-2.1.1/extensions/x86_64-linux/2.1.0/nokogiri-1.6.2.1
+  6. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/nokogiri-1.6.2.1/lib
+  7. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/mini_portile-0.6.0/lib
+  8. /home/chrisj/.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/json-1.8.1/lib
+  9. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/haml-3.1.7/lib
+  10. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/guard-nanoc-1.0.2/lib
+  11. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/nanoc-3.6.11/lib
+  12. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/guard-2.6.1/lib
+  13. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/thor-0.19.1/lib
+  14. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/pry-0.9.12.6/lib
+  15. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/slop-3.5.0/lib
+  16. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/method_source-0.8.2/lib
+  17. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/lumberjack-1.0.5/lib
+  18. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/listen-2.7.5/lib
+  19. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/rb-inotify-0.9.4/lib
+  20. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/rb-fsevent-0.9.4/lib
+  21. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/formatador-0.2.5/lib
+  22. /home/chrisj/.rvm/gems/ruby-2.1.1/extensions/x86_64-linux/2.1.0/ffi-1.9.3
+  23. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/ffi-1.9.3/lib
+  24. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/ffi-1.9.3/ext/ffi_c
+  25. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/cri-2.6.0/lib
+  26. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/colored-1.2/lib
+  27. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/coderay-1.1.0/lib
+  28. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/celluloid-0.15.2/lib
+  29. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/timers-1.1.0/lib
+  30. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/adsf-1.2.0/lib
+  31. /home/chrisj/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib
+  32. /home/chrisj/.rvm/gems/ruby-2.1.1@global/gems/bundler-1.5.3/lib
+  33. /home/chrisj/.rvm/rubies/ruby-2.1.1/lib/ruby/site_ruby/2.1.0
+  34. /home/chrisj/.rvm/rubies/ruby-2.1.1/lib/ruby/site_ruby/2.1.0/x86_64-linux
+  35. /home/chrisj/.rvm/rubies/ruby-2.1.1/lib/ruby/site_ruby
+  36. /home/chrisj/.rvm/rubies/ruby-2.1.1/lib/ruby/vendor_ruby/2.1.0
+  37. /home/chrisj/.rvm/rubies/ruby-2.1.1/lib/ruby/vendor_ruby/2.1.0/x86_64-linux
+  38. /home/chrisj/.rvm/rubies/ruby-2.1.1/lib/ruby/vendor_ruby
+  39. /home/chrisj/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0
+  40. /home/chrisj/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/x86_64-linux

@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'sass'
+gem 'redcarpet'
+gem 'nanoc'
+gem 'adsf'
+gem 'guard-nanoc'
+gem 'haml'
+gem 'nokogiri'
+gem 'w3c_validators'
