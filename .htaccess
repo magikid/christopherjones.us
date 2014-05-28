@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule .* https://christopherjones.us%{REQUEST_URI} [last]
