@@ -1,0 +1,49 @@
+* { 
+	padding: 0; margin: 0; 
+}
+
+p { 
+	color: #1b1a15;
+  font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	line-height: 24px; 
+	margin-bottom: 22px; 
+	-webkit-font-smoothing: antialiased; 
+}
+
+a { 
+	color: #1b1a15; 
+	font-weight: bold; 
+	text-decoration: none; 
+	border-bottom: 1px solid rgba(255,255,255,0.3); 
+}
+
+a:hover { 
+	color: #336639; 
+	border-bottom: 1px solid rgba(255,255,255,1); 
+}
+
+#monogram { 
+	width: 50px; 
+	padding: 50px 0 0 0; 
+	margin: 0 auto 0 50px; 
+}
+
+#about { 
+	width: 360px;  
+	padding: 10px 25px 10px 25px; 
+	margin: -35px 50px 0 auto !important; 
+	background-color: rgba(255,255,255,0.7); 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	-khtml-border-radius: 10px; 
+	border-radius: 20px; 
+	box-shadow: 3px 3px 4px #0A0A0A;
+}
+
+body{
+	background: url(cwj_bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #4a494e;
+}
