@@ -15,9 +15,8 @@ RUN mv /usr/share/writefreely/pages .
 ARG DB_USERNAME="writefreely"
 ARG DB_PASSWORD="admin"
 ARG DB_NAME="writefreely"
-ENV DB_HOST="localhost"
-ENV DB_PORT=3306
-ENV PORT=5000
+ARG DB_HOST="localhost"
+ARG DB_PORT=3306
 
 # Copy over our config
 COPY config.ini initial_config.ini
@@ -26,4 +25,4 @@ RUN rm initial_config.ini
 # Genreate encryption keys for cookies and email
 RUN ["writefreely", "-c", "/app/config.ini", "keys", "generate"]
 CMD ["writefreely", "-c", "/app/config.ini"]
-EXPOSE ${PORT}
+EXPOSE 5000
