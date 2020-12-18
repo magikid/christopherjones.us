@@ -8,8 +8,6 @@ RUN apk --update-cache \
 
 WORKDIR /app
 
-ADD CHECKS .
-
 # WF requires these in the current directory
 RUN mv /usr/share/writefreely/templates .
 RUN mv /usr/share/writefreely/static .
@@ -28,4 +26,7 @@ RUN rm initial_config.ini
 # Genreate encryption keys for cookies and email
 RUN ["writefreely", "-c", "/app/config.ini", "keys", "generate"]
 CMD ["writefreely", "-c", "/app/config.ini"]
+
 EXPOSE 5000
+
+ADD CHECKS .
