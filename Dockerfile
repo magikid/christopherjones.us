@@ -7,6 +7,9 @@ RUN apk --update-cache \
     add gettext writefreely
 
 WORKDIR /app
+
+ADD CHECKS .
+
 # WF requires these in the current directory
 RUN mv /usr/share/writefreely/templates .
 RUN mv /usr/share/writefreely/static .
