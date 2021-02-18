@@ -20,12 +20,10 @@ ARG DB_HOST="localhost"
 ARG DB_PORT=3306
 
 # Copy over our config
-COPY config.ini initial_config.ini
-RUN envsubst < initial_config.ini > config.ini
-RUN rm initial_config.ini
-# Genreate encryption keys for cookies and email
-RUN ["writefreely", "-c", "/app/config.ini", "keys", "generate"]
-CMD ["writefreely", "-c", "/app/config.ini"]
+COPY config.ini config.ini
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+CMD ["/entrypoint.sh"]
 
 EXPOSE 5000
 
