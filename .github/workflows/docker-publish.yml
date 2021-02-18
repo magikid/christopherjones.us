@@ -43,7 +43,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Build image
-        run: docker build . --file Dockerfile --tag $IMAGE_NAME
+        run: docker build . --file Dockerfile --tag $IMAGE_NAME --build-arg=DB_HOST=$DB_HOST --build-arg=DB_NAME=$DB_NAME --build-arg=DB_PASSWORD=$DB_PASSWORD --build-arg=DB_PORT=$DB_PORT --build-arg=DB_USERNAME=$DB_USERNAME
 
       - name: Log into registry
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
