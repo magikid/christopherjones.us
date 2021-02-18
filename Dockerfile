@@ -4,7 +4,11 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/reposit
 RUN apk --update-cache \
     --no-cache \
     --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community \
-    add gettext writefreely
+    add \
+        curl \
+        ca-certificates \
+        gettext \
+        writefreely
 
 WORKDIR /app
 
@@ -27,4 +31,4 @@ CMD ["/entrypoint.sh"]
 
 EXPOSE 5000
 
-ADD CHECKS .
+HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 CMD [ "curl", "localhost" ]
