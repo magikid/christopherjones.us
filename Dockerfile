@@ -25,9 +25,9 @@ ARG DB_PORT=3306
 
 # Copy over our config
 COPY config.ini config.ini
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
-CMD ["/entrypoint.sh"]
+COPY entrypoint.sh entrypoint.sh
+RUN chmod +x entrypoint.sh
+CMD ["/app/entrypoint.sh"]
 
 EXPOSE 5000
 
