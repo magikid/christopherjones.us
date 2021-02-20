@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 
-set -euo pipefail
+set -eu
 
-envsubst < initial_config.ini > config.ini
+envsubst < /app/initial_config.ini > /app/config.ini
 writefreely -c /app/config.ini keys generate
 writefreely -c /app/config.ini

@@ -24,11 +24,9 @@ ARG DB_HOST="localhost"
 ARG DB_PORT=3306
 
 # Copy over our config
-COPY config.ini config.ini
+COPY config.ini initial_config.ini
 COPY entrypoint.sh entrypoint.sh
 RUN chmod +x entrypoint.sh
 CMD ["/app/entrypoint.sh"]
 
 EXPOSE 5000
-
-HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 CMD [ "curl", "localhost" ]
